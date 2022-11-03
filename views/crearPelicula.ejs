@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
+
+		<title>Crear</title>
+	    <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container" id="center">
+                <a class="navbar-brand hola">DETALLE</a>
+                <ul class="nav justify-content-end" id="volver">
+    
+                        <li class="nav-item navbar-menu">
+                            <a class="btn btn-outline-light" role="button" aria-pressed="true" href="/">Volver</a>
+                        </li>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+	</head>
+	<body>
+		<br />
+		<br />
+		<br />
+		<div class="divCreate">
+			<form action="/crear" method="POST">
+				<div>
+					<label for="">Titulo</label>
+					<input type="text" name="titulo" id="titulo" required />
+				</div>
+				<br />
+				<div>
+					<label for="">Rating</label>
+					<input type="text" name="rating" id="rating" required />
+				</div>
+				<br />
+				<div>
+					<label for="">Premios</label>
+					<input type="text" name="premios" id="premios" required />
+				</div>
+				<br />
+				<div>
+					<label for="">Duracion</label>
+					<input type="text" name="duracion" id="duracion" required />
+				</div>
+				<br />
+				<div>
+					<label for="">Fecha de estreno</label>
+					<input type="date" name="release_date" id="release_date" required />
+				</div>
+				<br />
+				<div>
+					<label for="">Genero</label>
+					<select name="genero">
+						<% for (let i=0; i< generos.length; i++) { %>
+						<option value="<%= generos[i].id %> ">
+							<%= generos[i].name %>
+						</option>
+						<% } %>
+					</select>
+				</div>
+				<br />
+
+				<button type="submit" class="btn btn-outline-primary">Crear</button>
+			</form>
+		</div>
+	</body>
+</html>

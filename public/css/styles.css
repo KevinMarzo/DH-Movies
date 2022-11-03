@@ -1,0 +1,53 @@
+.body-lista {
+	margin-top: 2.2 rem;
+	margin-bottom: 1.2rem;
+}
+
+h1 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: "Roboto Mono", monospace;
+}
+
+a.navbar-brand.hola {
+	color: rgb(255, 255, 255);
+	font-family: "Roboto Mono", monospace;
+}
+
+a.list-group-item.list-group-item-action {
+	font-family: "Roboto Mono", monospace;
+}
+
+li.nav-item.navbar-menu {
+	margin: 30 px;
+}
+
+.container.detalle {
+	margin-top: 100px;
+}
+
+#center {
+	justify-content: center;
+	display: flex;
+	position: relative;
+}
+
+.divCreate {
+	text-align: center;
+}
+
+#volver {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.gap {
+	display: flex;
+	gap: 10px;
+}
+
+#gap {
+	display: flex;
+	gap: 10px;
+}
